@@ -186,15 +186,15 @@ const defaultLayerDefinition = {
 			nullable: true,
 			length: 1500
 		},
-      {
-        name: 'Gender',
-        type: 'esriFieldTypeString',
-        alias: 'Gender',
-        domain: null,
-        editable: true,
-        nullable: true,
-        length: 50
-      },
+        {
+          name: 'Gender',
+          type: 'esriFieldTypeString',
+          alias: 'Gender',
+          domain: null,
+          editable: true,
+          nullable: true,
+          length: 50
+        },
 		{
 			name: 'LocationName',
 			type: 'esriFieldTypeString',
