@@ -47,13 +47,13 @@ export const featureServiceDefaults = {
           storeGeometry: true
         }
       },
-      DOB: {
+      DateOfBirth: {
         required: true,
         type: 'text',
-        fieldID: 'DOB',
-        label: builderText.contribute.defaultForm.DOB.label,
-        attributeName: builderText.contribute.defaultForm.DOB.attribute,
-        placeholder: builderText.contribute.defaultForm.DOB.placeholder,
+        fieldID: 'DateOfBirth',
+        label: builderText.contribute.defaultForm.dateOfBirth.label,
+        attributeName: builderText.contribute.defaultForm.dateOfBirth.attribute,
+        placeholder: builderText.contribute.defaultForm.dateOfBirth.placeholder,
         validations: ['arcgisSupportedHtml']
       },
       Gender: {
@@ -69,9 +69,9 @@ export const featureServiceDefaults = {
         required: true,
         type: 'text',
         fieldID: 'ArtistName',
-        label: builderText.contribute.defaultForm.artist.label,
-        attributeName: builderText.contribute.defaultForm.artist.attribute,
-        placeholder: builderText.contribute.defaultForm.artist.placeholder,
+        label: builderText.contribute.defaultForm.artistName.label,
+        attributeName: builderText.contribute.defaultForm.artistName.attribute,
+        placeholder: builderText.contribute.defaultForm.artistName.placeholder,
         validations: ['arcgisSupportedHtml']
       },
       Essay: {
