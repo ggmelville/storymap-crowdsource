@@ -66,7 +66,7 @@ define({
           placeholder: 'Enter name of subject'
         },
         gender: {
-          label: 'Gender',
+          label: 'Subject Gender',
           attribute: 'gender',
           placeholder: 'Enter a gender'
         },
@@ -86,9 +86,9 @@ define({
           placeholder: 'Type/copy and paste your essay here'
         },
         location: {
-          label: 'Location',
+          label: 'Building Location',
           attribute: 'location',
-          placeholder: '* Rather than typying a location, click a building on the map!'
+          placeholder: '* Rather than typing a location, click a building on the map!'
         },
         photo: {
           label: 'Photo',
