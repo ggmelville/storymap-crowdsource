@@ -47,23 +47,41 @@ export const featureServiceDefaults = {
           storeGeometry: true
         }
       },
-      Description: {
+      DOB: {
         required: true,
-        type: 'textarea',
-        fieldID: 'Description',
-        label: builderText.contribute.defaultForm.description.label,
-        attributeName: builderText.contribute.defaultForm.description.attribute,
-        placeholder: builderText.contribute.defaultForm.description.placeholder,
+        type: 'text',
+        fieldID: 'DOB',
+        label: builderText.contribute.defaultForm.DOB.label,
+        attributeName: builderText.contribute.defaultForm.DOB.attribute,
+        placeholder: builderText.contribute.defaultForm.DOB.placeholder,
         validations: ['arcgisSupportedHtml']
       },
       Gender: {
         required: true,
-        type: 'textarea',
+        type: 'text',
         fieldID: 'Gender',
         label: builderText.contribute.defaultForm.gender.label,
         attributeName: builderText.contribute.defaultForm.gender.attribute,
         placeholder: builderText.contribute.defaultForm.gender.placeholder,
         validations: ['arcgisSupportedHtml']
+      },
+      ArtistName: {
+        required: true,
+        type: 'text',
+        fieldID: 'ArtistName',
+        label: builderText.contribute.defaultForm.artist.label,
+        attributeName: builderText.contribute.defaultForm.artist.attribute,
+        placeholder: builderText.contribute.defaultForm.artist.placeholder,
+        validations: ['arcgisSupportedHtml']
+      },
+      Essay: {
+        required: true,
+        type: 'textarea',
+        fieldID: 'Essay',
+        label: builderText.contribute.defaultForm.essay.label,
+        attributeName: builderText.contribute.defaultForm.essay.attribute,
+        placeholder: builderText.contribute.defaultForm.essay.placeholder,
+        validations: []
       }
     }
   }
