@@ -61,14 +61,9 @@ define({
       defaultTitle: 'Add your contribution',
       defaultForm: {
         name: {
-          label: 'Title',
-          attribute: 'title',
-          placeholder: 'Enter a title'
-        },
-        description: {
-          label: 'Description',
-          attribute: 'description',
-          placeholder: 'Enter a description (200 words or fewer please)'
+          label: 'Name',
+          attribute: 'name',
+          placeholder: 'Enter name of subject'
         },
         gender: {
           label: 'Gender',
