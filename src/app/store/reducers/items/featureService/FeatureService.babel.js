@@ -187,13 +187,13 @@ const defaultLayerDefinition = {
 			length: 200
 		},     
         {
-          name: 'Gender',
-          type: 'esriFieldTypeString',
-          alias: 'Gender',
-          domain: null,
-          editable: true,
-          nullable: true,
-          length: 50
+            name: 'Gender',
+            type: 'esriFieldTypeString',
+            alias: 'Gender',
+            domain: null,
+            editable: true,
+            nullable: true,
+            length: 50
        },
 		{
 			name: 'LocationName',
@@ -205,22 +205,22 @@ const defaultLayerDefinition = {
 			length: 256
 		},
         {
-        name: 'ArtistName',
-        type: 'esriFieldTypeString',
-        alias: 'ArtistName',
-        domain: null,
-        editable: true,
-        nullable: true,
-        length: 256
+            name: 'ArtistName',
+            type: 'esriFieldTypeString',
+            alias: 'ArtistName',
+            domain: null,
+            editable: true,
+            nullable: true,
+            length: 256
         },
         {
-        name: 'Essay',
-        type: 'esriFieldTypeString',
-        alias: 'Essay',
-        domain: null,
-        editable: true,
-        nullable: true,
-        length: 10000
+            name: 'Essay',
+            type: 'esriFieldTypeString',
+            alias: 'Essay',
+            domain: null,
+            editable: true,
+            nullable: true,
+            length: 10000
         },   
 		{
 			name: 'Hidden',
