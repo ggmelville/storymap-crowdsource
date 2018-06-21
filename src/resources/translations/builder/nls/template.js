@@ -61,7 +61,7 @@ define({
       defaultTitle: 'Add your contribution',
       defaultForm: {
         name: {
-          label: 'Name',
+          label: 'Name of Portrait Subject',
           attribute: 'name',
           placeholder: 'Enter name of subject'
         },
@@ -88,7 +88,7 @@ define({
         location: {
           label: 'Location',
           attribute: 'location',
-          placeholder: 'Enter a location'
+          placeholder: '* Rather than typying a location, click a building on the map!'
         },
         photo: {
           label: 'Photo',
