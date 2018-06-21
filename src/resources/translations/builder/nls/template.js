@@ -70,14 +70,14 @@ define({
           attribute: 'gender',
           placeholder: 'Enter a gender'
         },
-        DOB: {
+        dateOfBirth: {
           label: 'Date of Birth',
-          attribute: 'DOB',
+          attribute: 'dateOfBirth',
           placeholder: "Enter the subject's date of birth"
         },
         artistName: {
           label: 'Name of Artist',
-          attribute: 'artist',
+          attribute: 'artistName',
           placeholder: "Enter the artist's name"
         },
         essay: {
