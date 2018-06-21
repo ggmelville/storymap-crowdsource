@@ -81,7 +81,7 @@ export const featureServiceDefaults = {
         label: builderText.contribute.defaultForm.essay.label,
         attributeName: builderText.contribute.defaultForm.essay.attribute,
         placeholder: builderText.contribute.defaultForm.essay.placeholder,
-        validations: []
+        validations: ['arcgisSupportedHtml']
       }
     }
   }
