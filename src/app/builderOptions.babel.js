@@ -60,9 +60,9 @@ export const featureServiceDefaults = {
         required: true,
         type: 'textarea',
         fieldID: 'Gender',
-        label: builderText.contribute.defaultForm.Gender.label,
-        attributeName: builderText.contribute.defaultForm.Gender.attribute,
-        placeholder: builderText.contribute.defaultForm.Gender.placeholder,
+        label: builderText.contribute.defaultForm.gender.label,
+        attributeName: builderText.contribute.defaultForm.gender.attribute,
+        placeholder: builderText.contribute.defaultForm.gender.placeholder,
         validations: ['arcgisSupportedHtml']
       }
     }
