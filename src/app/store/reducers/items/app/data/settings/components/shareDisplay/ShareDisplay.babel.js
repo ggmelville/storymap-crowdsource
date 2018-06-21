@@ -5,7 +5,7 @@ const defaultDisplay = {
     type: 'photo',
     field: 'PrimaryPhoto'
   },
-  displayOrder: ['Description']
+  displayOrder: ['Description','Gender']
 };
 
 export const shareDisplay = function (state = defaultDisplay, action) {
