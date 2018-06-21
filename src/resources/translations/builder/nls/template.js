@@ -70,6 +70,11 @@ define({
           attribute: 'description',
           placeholder: 'Enter a description (200 words or fewer please)'
         },
+        gender: {
+          label: 'Gender',
+          attribute: 'gender',
+          placeholder: 'Enter a gender'
+        },
         location: {
           label: 'Location',
           attribute: 'location',
