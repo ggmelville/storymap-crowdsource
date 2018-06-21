@@ -178,9 +178,9 @@ const defaultLayerDefinition = {
 			length: 200
 		},
 		{
-			name: 'DOB',
+			name: 'DateOfBirth',
 			type: 'esriFieldTypeString',
-			alias: 'DOB',
+			alias: 'DateOfBirth',
 			domain: null,
 			editable: true,
 			nullable: true,
