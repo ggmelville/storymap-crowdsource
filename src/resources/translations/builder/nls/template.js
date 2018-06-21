@@ -75,6 +75,21 @@ define({
           attribute: 'gender',
           placeholder: 'Enter a gender'
         },
+        DOB: {
+          label: 'Date of Birth',
+          attribute: 'DOB',
+          placeholder: "Enter the subject's date of birth"
+        },
+        artistName: {
+          label: 'Name of Artist',
+          attribute: 'artist',
+          placeholder: "Enter the artist's name"
+        },
+        essay: {
+          label: 'Essay',
+          attribute: 'essay',
+          placeholder: 'Type/copy and paste your essay here'
+        },
         location: {
           label: 'Location',
           attribute: 'location',
