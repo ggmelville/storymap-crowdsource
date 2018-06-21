@@ -34,19 +34,6 @@ export const featureServiceDefaults = {
         placeholder: builderText.contribute.defaultForm.name.placeholder,
         validations: ['arcgisSupportedHtml']
       },
-      LocationName: {
-        required: true,
-        type: 'location',
-        fieldID: 'LocationName',
-        label: builderText.contribute.defaultForm.location.label,
-        attributeName: builderText.contribute.defaultForm.location.attribute,
-        placeholder: builderText.contribute.defaultForm.location.placeholder,
-        validations: [],
-        extras: {
-          dataType: 'location',
-          storeGeometry: true
-        }
-      },
       DateOfBirth: {
         required: true,
         type: 'text',
@@ -64,6 +51,19 @@ export const featureServiceDefaults = {
         attributeName: builderText.contribute.defaultForm.gender.attribute,
         placeholder: builderText.contribute.defaultForm.gender.placeholder,
         validations: ['arcgisSupportedHtml']
+      },
+      LocationName: {
+        required: true,
+        type: 'location',
+        fieldID: 'LocationName',
+        label: builderText.contribute.defaultForm.location.label,
+        attributeName: builderText.contribute.defaultForm.location.attribute,
+        placeholder: builderText.contribute.defaultForm.location.placeholder,
+        validations: [],
+        extras: {
+          dataType: 'location',
+          storeGeometry: true
+        }
       },
       ArtistName: {
         required: true,
