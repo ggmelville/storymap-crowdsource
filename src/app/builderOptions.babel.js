@@ -52,7 +52,7 @@ export const featureServiceDefaults = {
         placeholder: builderText.contribute.defaultForm.gender.placeholder,
         validations: ['arcgisSupportedHtml']
       },
-      BuildingName:{
+      BuildingName: {
         required: true,
         type: 'text',
         fieldID: 'BuildingName',
