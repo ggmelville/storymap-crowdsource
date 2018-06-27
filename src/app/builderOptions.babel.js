@@ -34,13 +34,13 @@ export const featureServiceDefaults = {
         placeholder: builderText.contribute.defaultForm.name.placeholder,
         validations: ['arcgisSupportedHtml']
       },
-      DateOfBirth: {
+      DateOfPainting: {
         required: true,
         type: 'text',
-        fieldID: 'DateOfBirth',
-        label: builderText.contribute.defaultForm.dateOfBirth.label,
-        attributeName: builderText.contribute.defaultForm.dateOfBirth.attribute,
-        placeholder: builderText.contribute.defaultForm.dateOfBirth.placeholder,
+        fieldID: 'dateOfPainting',
+        label: builderText.contribute.defaultForm.dateOfPainting.label,
+        attributeName: builderText.contribute.defaultForm.dateOfPainting.attribute,
+        placeholder: builderText.contribute.defaultForm.dateOfPainting.placeholder,
         validations: ['arcgisSupportedHtml']
       },
       Gender: {
@@ -50,6 +50,15 @@ export const featureServiceDefaults = {
         label: builderText.contribute.defaultForm.gender.label,
         attributeName: builderText.contribute.defaultForm.gender.attribute,
         placeholder: builderText.contribute.defaultForm.gender.placeholder,
+        validations: ['arcgisSupportedHtml']
+      },
+      BuildingName:{
+        required: true,
+        type: 'text',
+        fieldID: 'BuildingName',
+        label: builderText.contribute.defaultForm.buildingName.label,
+        attributeName: builderText.contribute.defaultForm.buildingName.attribute,
+        placeholder: builderText.contribute.defaultForm.buildingName.placeholder,
         validations: ['arcgisSupportedHtml']
       },
       LocationName: {
