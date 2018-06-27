@@ -58,27 +58,32 @@ define({
       }
     },
     contribute: {
-      defaultTitle: 'Add your contribution',
+      defaultTitle: "NOTE: Be sure to type your inputs correctly without mistakes! For example, use the correct date format and capitalize all nouns (Malkin Athletic Center)",
       defaultForm: {
         name: {
           label: 'Name of Portrait Subject',
           attribute: 'name',
-          placeholder: 'Enter name of subject'
+          placeholder: 'Enter name of subject (first and last)'
         },
         gender: {
           label: 'Subject Gender',
           attribute: 'gender',
-          placeholder: 'Enter a gender'
+          placeholder: "Enter 'Male' or 'Female'"
         },
-        dateOfBirth: {
-          label: 'Date of Birth',
-          attribute: 'dateOfBirth',
-          placeholder: "Enter the subject's date of birth"
+        buildingName:{
+          label: 'Building Name',
+          attribute: 'buildingName',
+          placeholder: ' Enter the building name'
+        },
+        dateOfPainting: {
+          label: 'Date of Painting',
+          attribute: 'dateOfPainting',
+          placeholder: " 'mm/dd/yyyy' Enter when the portrait was painted"
         },
         artistName: {
           label: 'Name of Artist',
           attribute: 'artistName',
-          placeholder: "Enter the artist's name"
+          placeholder: "Enter the artist's first and last name"
         },
         essay: {
           label: 'Essay',
@@ -88,7 +93,7 @@ define({
         location: {
           label: 'Building Location',
           attribute: 'location',
-          placeholder: '* Rather than typing a location, click a building on the map!'
+          placeholder: '*** Rather than typing a location, click on the center of the building!'
         },
         photo: {
           label: 'Photo',
