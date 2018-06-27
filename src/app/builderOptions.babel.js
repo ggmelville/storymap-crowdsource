@@ -37,7 +37,7 @@ export const featureServiceDefaults = {
       DateOfPainting: {
         required: true,
         type: 'text',
-        fieldID: 'dateOfPainting',
+        fieldID: 'DateOfPainting',
         label: builderText.contribute.defaultForm.dateOfPainting.label,
         attributeName: builderText.contribute.defaultForm.dateOfPainting.attribute,
         placeholder: builderText.contribute.defaultForm.dateOfPainting.placeholder,
