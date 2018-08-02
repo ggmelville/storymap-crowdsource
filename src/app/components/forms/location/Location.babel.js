@@ -67,11 +67,11 @@ export default class Location extends FormGroup {
   //    theme: 'calcite-locate'
   //  },this.locatorContainer[0]);
 
-  //  this.locatorContainer = $(locatorNode).find('.calcite-locate');
-  //  this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
-  //    <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
-  //    <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
-  //    <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
+    this.locatorContainer = $(locatorNode).find('.calcite-locate');
+    this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
+      <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
+      <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
+      <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
 
     this.geocoderSeachButton = $(geocoderNode).find('.esriGeocoderSearch');
     this.geocoderSeachButton.attr('tabindex',-1);
