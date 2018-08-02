@@ -186,11 +186,11 @@ export default class Location extends FormGroup {
        //     <span className="find-on-map-text">{ViewerText.contribute.form.location.findOnMap}</span>
        // </div>
        // </div>
-       // { this.state.reverseCoords ? (
-       //   <a href="#" onClick={this.reverseGeocode.bind(this,this.state.reverseCoords)}><small><strong>Did you mean:</strong> Longitude: {this.state.reverseCoords.longLatResult[0]} Latitude: {this.state.reverseCoords.longLatResult[1]}?</small></a>
-       // ) : null }
-      //  {this.getErrorMessage ? this.getErrorMessage() : null}
-     // </div>
+        { this.state.reverseCoords ? (
+          <a href="#" onClick={this.reverseGeocode.bind(this,this.state.reverseCoords)}><small><strong>Did you mean:</strong> Longitude: {this.state.reverseCoords.longLatResult[0]} Latitude: {this.state.reverseCoords.longLatResult[1]}?</small></a>
+        ) : null }
+        {this.getErrorMessage ? this.getErrorMessage() : null}
+      </div>
     );
   }
 
