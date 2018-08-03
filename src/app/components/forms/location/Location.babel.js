@@ -126,7 +126,7 @@ export default class Location extends FormGroup {
     this.geocoderInput.on('blur',this.onBlur);
 
     this.geocoder.startup();
-    this.locateButton.startup();
+    //this.locateButton.startup();
 
     // Define Graphic and Add Graphics Layer to map
     this.locationSymbol = new SimpleMarkerSymbol('circle', 16,new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([204, 62, 68, 1]), 3),new Color([255, 255, 255, .5]));
