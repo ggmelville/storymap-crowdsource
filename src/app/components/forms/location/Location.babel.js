@@ -171,7 +171,7 @@ export default class Location extends FormGroup {
         {this.props.tooltip ? <IconTooltip className="form-tooltip" {...this.props.tooltip} /> : null}
         <div
           className="geocoder"
-          //ref={(ref) => this.geocoderContainer = ref}>
+          ref={(ref) => this.geocoderContainer = ref}>
         </div>
         <div className="action-btn-wrapper">
         <div
