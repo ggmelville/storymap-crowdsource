@@ -174,10 +174,10 @@ export default class Location extends FormGroup {
           ref={(ref) => this.geocoderContainer = ref}>
         </div>
         <div className="action-btn-wrapper">
-        <div
-          className="locator"
-          ref={(ref) => this.locatorContainer = ref}>
-        </div>
+       // <div
+       //   className="locator"
+       //   ref={(ref) => this.locatorContainer = ref}>
+       // </div>
         <div
           className="find-on-map btn btn-default btn-sm"
           ref={(ref) => this.findOnMapContainer = ref}
