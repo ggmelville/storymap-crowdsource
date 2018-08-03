@@ -61,11 +61,11 @@ export default class Location extends FormGroup {
       theme: 'calcite-geocoder'
     },this.geocoderContainer[0]);
 
-   // this.locateButton = new LocateButton({
-   //   map: this.props.map,
-   //   highlightLocation: false,
-   //   theme: 'calcite-locate'
-   // },this.locatorContainer[0]);
+    this.locateButton = new LocateButton({
+      map: this.props.map,
+      highlightLocation: false,
+      theme: 'calcite-locate'
+    },this.locatorContainer[0]);
 
     this.locatorContainer = $(locatorNode).find('.calcite-locate');
     //this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
