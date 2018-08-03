@@ -68,10 +68,10 @@ export default class Location extends FormGroup {
     },this.locatorContainer[0]);
 
     this.locatorContainer = $(locatorNode).find('.calcite-locate');
-    //this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
-    //  <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
-    //  <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
-    //  <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
+    this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
+      <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
+      <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
+      <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
 
     this.geocoderSeachButton = $(geocoderNode).find('.esriGeocoderSearch');
     this.geocoderSeachButton.attr('tabindex',-1);
@@ -86,22 +86,22 @@ export default class Location extends FormGroup {
     this.geocoderAutocomplete = $(geocoderNode).find('.esriGeocoderResults');
     this.geocoderAutocomplete.addClass('form-control');
 
-   //this.locateButton.on('locate',this.reverseGeocode);
-   // this.locatorContainer.on('click',(e) => {
-   //   if (e.which === 13) {
-    //    this.value = undefined;
-   //     this.valid = false;
-   //     this.handleChange();
-   //   }
-  //  });
-  //  this.locatorContainer.on('keypress',(e) => {
-  //    if (e.which === 13) {
-  //      this.value = undefined;
-  //      this.valid = false;
-  //      this.handleChange();
-  //      this.locateButton.locate();
-  //    }
-   // });
+   this.locateButton.on('locate',this.reverseGeocode);
+    this.locatorContainer.on('click',(e) => {
+      if (e.which === 13) {
+        this.value = undefined;
+        this.valid = false;
+        this.handleChange();
+      }
+    });
+    this.locatorContainer.on('keypress',(e) => {
+      if (e.which === 13) {
+        this.value = undefined;
+        this.valid = false;
+        this.handleChange();
+        this.locateButton.locate();
+      }
+    });
 
     this.addInputAttributes();
 
@@ -126,9 +126,9 @@ export default class Location extends FormGroup {
     this.geocoderInput.on('blur',this.onBlur);
 
     this.geocoder.startup();
-    //this.locateButton.startup();
+    this.locateButton.startup();
 
-    // Define Graphic and Add Graphics Layer to map
+     Define Graphic and Add Graphics Layer to map
     this.locationSymbol = new SimpleMarkerSymbol('circle', 16,new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([204, 62, 68, 1]), 3),new Color([255, 255, 255, .5]));
     this.locationLayer = new GraphicsLayer({
       id: 'crowdsource-contribute-location'
@@ -174,10 +174,10 @@ export default class Location extends FormGroup {
           ref={(ref) => this.geocoderContainer = ref}>
         </div>
         <div className="action-btn-wrapper">
-       // <div
-       //   className="locator"
-       //   ref={(ref) => this.locatorContainer = ref}>
-       // </div>
+        <div
+          className="locator"
+          ref={(ref) => this.locatorContainer = ref}>
+        </div>
         <div
           className="find-on-map btn btn-default btn-sm"
           ref={(ref) => this.findOnMapContainer = ref}
