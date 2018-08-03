@@ -61,17 +61,17 @@ export default class Location extends FormGroup {
       theme: 'calcite-geocoder'
     },this.geocoderContainer[0]);
 
-    this.locateButton = new LocateButton({
-      map: this.props.map,
-      highlightLocation: false,
-      theme: 'calcite-locate'
-    },this.locatorContainer[0]);
+   // this.locateButton = new LocateButton({
+   //   map: this.props.map,
+   //   highlightLocation: false,
+   //   theme: 'calcite-locate'
+   // },this.locatorContainer[0]);
 
     this.locatorContainer = $(locatorNode).find('.calcite-locate');
-    this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
-      <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
-      <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
-      <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
+    //this.locatorContainer.find('.zoomLocateButton').addClass('btn btn-default btn-sm').html('<div class="locator-icon">\
+    //  <img class="loading-gif" src="resources/images/loader-light.gif" alt="' + ViewerText.contribute.form.location.gettingLocation + '">' + getIcon('location') + '</div>\
+    //  <span class="locating-text">' + ViewerText.contribute.form.location.gettingLocation + '\</span>\
+    //  <span class="locate-text">' + ViewerText.contribute.form.location.locate + '\</span>');
 
     this.geocoderSeachButton = $(geocoderNode).find('.esriGeocoderSearch');
     this.geocoderSeachButton.attr('tabindex',-1);
@@ -86,22 +86,22 @@ export default class Location extends FormGroup {
     this.geocoderAutocomplete = $(geocoderNode).find('.esriGeocoderResults');
     this.geocoderAutocomplete.addClass('form-control');
 
-    this.locateButton.on('locate',this.reverseGeocode);
-    this.locatorContainer.on('click',(e) => {
-      if (e.which === 13) {
-        this.value = undefined;
-        this.valid = false;
-        this.handleChange();
-      }
-    });
-    this.locatorContainer.on('keypress',(e) => {
-      if (e.which === 13) {
-        this.value = undefined;
-        this.valid = false;
-        this.handleChange();
-        this.locateButton.locate();
-      }
-    });
+   //this.locateButton.on('locate',this.reverseGeocode);
+   // this.locatorContainer.on('click',(e) => {
+   //   if (e.which === 13) {
+    //    this.value = undefined;
+   //     this.valid = false;
+   //     this.handleChange();
+   //   }
+  //  });
+  //  this.locatorContainer.on('keypress',(e) => {
+  //    if (e.which === 13) {
+  //      this.value = undefined;
+  //      this.valid = false;
+  //      this.handleChange();
+  //      this.locateButton.locate();
+  //    }
+   // });
 
     this.addInputAttributes();
 
